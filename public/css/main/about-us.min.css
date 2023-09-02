@@ -1,0 +1,50 @@
+.about-us {
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-img {
+  text-align: center;
+}
+
+.about-img img {
+  width: 100%;
+}
+
+.about-content {
+  color: #443a2e;
+}
+
+.about-content h2 {
+  font-family: 'DM Serif Display', 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.about-content h2 span {
+  font-family: Vollkorn, 'Times New Roman', Times, serif;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.about-content p {
+  text-align: justify;
+  margin: 2em 0;
+}
+
+@media  screen and (min-width: 768px) {
+  .about-us {
+    flex-direction: row;
+  }
+
+  .about-img {
+    flex: 40%;
+    margin-right: 1em;
+  }
+
+  .about-content {
+    flex: 50%;
+    margin-left: 1em;
+  }
+}

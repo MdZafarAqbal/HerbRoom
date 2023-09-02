@@ -1,0 +1,154 @@
+.track-order-container {
+  margin: 1em 0 0 3em;
+}
+
+.track-order-container p {
+  margin-bottom: 3em;
+  text-align: justify;
+  width: 80%;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input {
+  width: 80%;
+  height: 2.5em;
+  border-radius: 5px;
+  padding: 0.5em;
+}
+
+.img-container img {
+  max-width: 100%;
+}
+
+.btn-submit {
+  text-align: center;
+  width: 7em;
+}
+
+.tracking-details {
+  width: 90%;
+  margin: 1em auto;
+  padding: 1em;
+  border: 1px solid #7c8e7b;
+}
+
+.tracking-details h1 {
+  font-size: 1.3em;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.order-detail {
+  font-size: 0.8em;
+  margin-bottom: 1em;
+}
+
+.order-detail h2, .order-detail h3, .order-detail h4, .tracking-icon, .tracking-dates h4 {
+  display: inline-block;
+}
+
+#order-no, #status {
+  color: #000;
+}
+
+.order {
+  margin-bottom: 1.5em;
+}
+
+.tracking-dates {
+  font-size: 0.7em;
+}
+
+.tracking-icon {
+  width: 2em;
+}
+
+.status-img-container {
+  margin-top: 0.8em;
+}
+
+#status-img {
+  width: 100%;
+}
+
+.date {
+  color: #666;
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 480px) {
+  .btn-submit {
+    text-align: center;
+    width: 9em;
+  }
+
+  .tracking-details {
+    margin: 0.8em auto;
+    padding: 0.8em;
+  }
+
+  .tracking-details h1 {
+    font-size: 2em;
+  }
+
+  .order-detail {
+    font-size: 1em;
+  }
+
+  .tracking-dates {
+    font-size: 0.85em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tracking-order-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tracking-details {
+    flex: 50%;
+    margin: 1em auto;
+    padding: 1em;
+  }
+
+  .img-container {
+    flex: 40%;
+  }
+
+  .tracking-details h1 {
+    font-size: 2.5em;
+  }
+
+  .order-detail {
+    font-size: 1.2em;
+  }
+
+  .tracking-dates {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tracking-dates {
+    padding: 0 2em;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .date {
+    width: 10em;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .date {
+    width: 12em;
+  }
+}

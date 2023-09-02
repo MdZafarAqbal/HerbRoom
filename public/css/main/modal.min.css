@@ -1,0 +1,89 @@
+.collapse {
+  display: none;
+}
+
+.error {
+  margin-top: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    overflow: hidden;
+    transform: scale(0);
+    transform-origin: center;
+    transition: all 800ms ease-in-out;
+  }
+
+  .modal {
+    position: relative;
+    top: 7.5vh;
+    margin: auto;
+    background-color: #faf9f6;
+    width: 98vw;
+    height: 85vh;
+    overflow-x: hidden;
+    box-shadow: 0 5px 10px 2px rgba(124, 142, 123, 0.5);
+  }
+
+  .modal .close, .checkout-popup .close {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    width: 30px;
+    z-index: 10;
+  }
+
+  .modal-view-link {
+    display: inline-block;
+    margin-top: 1em;
+  }
+
+  a.modal-view-link::before, a.modal-view-link::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  a.modal-view-link::before{
+    top: -2.5%;
+    left: -1%;
+    border-top: 2px solid #7c8e7b;
+    border-left: 2px solid #7c8e7b;	
+  }
+
+  a.modal-view-link::after{
+    bottom: -2.5%;
+    right: -1%;
+    border-bottom: 2px solid #7c8e7b;
+    border-right: 2px solid #7c8e7b;
+  }
+
+  a.modal-view-link:hover::before, a.modal-view-link:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+
+  #product-details-icon {
+    font-size: 24px;
+    color: #7c8e7b;
+    padding-right: 0.5em;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .modal {
+    top: 14.5vh;
+    width: 90vw;
+    height: 78.5vh;
+  }
+}

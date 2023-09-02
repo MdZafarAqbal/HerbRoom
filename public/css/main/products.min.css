@@ -1,0 +1,151 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1em;
+}
+
+.bread-crumbs {
+  font-size: 0.8em;
+  text-align: right;
+  width: 95%;
+  margin: 1em auto;
+}
+
+.bread-crumbs a {
+  color: #566356;
+  cursor: pointer;
+}
+
+.products-catalog {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  clear: both;
+}
+
+.products-sidebar {
+  display: none;
+}
+
+.catalog {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 78%;
+}
+
+.sorts {
+  float: right;
+}
+
+.sorts span {
+  text-align: right;
+  margin: 1em;
+}
+
+.sorting-list {
+  padding: 1em 0;
+  text-align: center;
+  background-color: #f2f4e6;
+  width: 14em;
+  position: absolute;
+  right: 1.5em;
+  top: 9.5em;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px 2px rgba(124, 142, 123, 0.5);
+  line-height: 2;
+  z-index: 2;
+}
+
+.sorting-list li {
+  cursor: pointer;
+}
+
+.sorting-list .selected {
+  background-color: #7c8e7b;
+  color: #f2f4e6;
+}
+
+.remove-btn {
+  font-size: 1vw;
+  background-color: #ee4b2b;
+  padding: 0.5em;
+  border-radius: 5px;
+  margin-left: 1em;
+  height: 3em;
+}
+
+.remove-btn a {
+  color: #faf9f6;
+}
+
+@media screen and (min-width: 768px) {
+  .product-card {
+    position: relative;
+  }
+
+  .products-sidebar {
+    display: flex;
+    margin: 1em 0 0 0.5em;
+    flex: 18%;
+    background-color: #f2f4e6;
+  }
+
+  .products-sidebar .title {
+    font-size: 24px;
+    text-align: center;
+    background-color: #7c8e7b;
+    padding: 0.2em;
+    margin: -0.3em 0 1em;
+    color: #faf9f6;
+  }
+  
+  .categories-menu {
+    width: 100%;
+    padding: 1em;
+  }
+  
+  .categories-menu li a {
+    color: #000;
+    font-weight: bold;
+    font-size: 0.8em;
+  }  
+  
+  .subcat li a {
+    font-weight: normal;
+  }
+
+  .categories-menu li {
+    padding: 0.2em;
+    text-align: center;
+  }  
+
+  .categories-menu li:hover a {
+    color: #f2f4e6;
+  }  
+
+  .categories-menu li:hover {
+    background-color: #7c8e7b;
+  }
+  
+  .subcat-menu {
+    font-size: 0.9em;
+    margin: 0 auto;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+  }
+  
+  .subcat-menu li {
+    margin: 0.1em 0;
+  }
+  
+  .dropdown-toggle:hover + .subcat-menu, .subcat-menu:hover {
+    height: 100%;
+    width: 75%;
+    transition: height 2s ease-in-out;
+  }
+}

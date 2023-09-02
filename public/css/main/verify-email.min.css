@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Poppins, Verdana, Tahoma, sans-serif;
+  color: #000;
+  background-color: #f2f4e6;
+}
+
+a {
+  text-decoration: none;
+  color: #323232;
+}
+
+.flash-message {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  opacity: 1;
+  transition: 4s ease-in-out;
+}
+
+.flash-success {
+  color: #fff;
+  background-color: #4bb543;
+}
+
+.web-header {
+  background-color: #ffd93d;
+  color: #323232;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5em;
+}
+
+.header-logo img {
+  display: block;
+  width: 4em;
+}
+
+.header-title {
+  font-family: Vollkorn, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+  letter-spacing: 0.05em;
+}
+
+#logout-icon {
+  font-size: 1.5em;
+}
+
+.email-verify-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-container {
+  width: 100%;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.verify-card {
+  text-align: center;
+  width: 95%;
+  margin: 1em 0;
+}
+
+.card-header {
+  padding: 0.2em;
+}
+
+.card-body {
+  margin: 0.5em;
+}
+
+.card-body p {
+  margin-bottom: 0.5em;
+}
+
+.resend-form {
+  text-align: center;
+}
+
+.btn-submit {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #323232;
+  width: 8em;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  cursor: pointer;
+  transition: transform .3s ease-in-out;
+}
+
+.btn-submit:hover {
+  transform: scale(0.9);
+  background-color: #ffd93d;
+  color: #323232;
+}
+
+@media screen and (min-width: 480px) {
+  .web-header {
+    justify-content: space-between;
+  }
+
+  .header-logo img {
+    width: 5em;
+    margin-left: 0.75em;
+  }
+
+  .header-title {
+    font-size: 1.8em;
+  }
+  
+  #logout-icon {
+    font-size: 1.8em;
+    margin-right: 1em;
+  }
+  
+  .img-container {
+    width: 100vw;
+    height: 65vh;
+  }
+
+  .img-container img {
+    height: 100%;
+  }
+
+  .verify-card {
+    width: 70%;
+  }
+
+  .btn-submit {
+    font-size: 1.6em;
+    width: 8em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-title {
+    letter-spacing: 0.15em;
+  }
+
+  .email-verify-section {
+    flex-direction: row-reverse;
+    margin-top: 2em;
+    height: 80vh;
+  }
+    
+  .img-container {
+    flex: 40%;
+    max-width: 100%;
+    height: 100%;
+    margin-right: 1em;
+  }
+
+  .verify-card {
+    flex: 40%;
+  }
+
+  .card-body {
+    margin: 1em;
+  }
+
+  .btn-submit {
+    margin-top: 1em;
+    width: 8em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .flash-message {
+    font-size: 1.1em;
+  }
+
+  .web-header {
+    height: 7em;
+  }
+
+  .header-logo img {
+    width: 7em;
+    margin-left: 1.2em;
+  }
+
+  .header-title {
+    font-size: 2.2em;
+    letter-spacing: 0.2em;
+  }
+
+  #logout-icon {
+    font-size: 2.2em;
+    margin-right: 1.2em;
+  }
+  
+  .verify-card {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .flash-message {
+    font-size: 1.2em;
+  }
+
+  .web-header {
+    height: 10vh;
+  }
+
+  .header-title {
+    font-size: 2.4em;
+  }
+  
+  #logout-icon {
+    font-size: 2.6em;
+  }
+  
+  .verify-card {
+    font-size: 1.2em;
+  }
+}
